@@ -12,8 +12,8 @@ public class BoidMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 forwardXY = new Vector3(transform.right.x, transform.right.y, 0).normalized;
-        Velocity = Vector2.Lerp(Velocity, forwardXY, Time.fixedDeltaTime);
+        //Vector3 forwardXY = new Vector3(transform.right.x, transform.right.y, 0).normalized;
+        Velocity = Vector2.Lerp(Velocity, transform.forward, Time.fixedDeltaTime);
         print(Velocity);
         this.transform.position += Velocity * moveSpeed * Time.fixedDeltaTime;
         
@@ -21,9 +21,7 @@ public class BoidMovement : MonoBehaviour
     }
     private void LookRotation()
     {
-        //this.transform.rotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(Velocity), Time.fixedDeltaTime);
-        //if (Velocity.sqrMagnitude < 0.001f) return;
-
-        //this.transform.localRotation = Quaternion.Euler(0, 180, 90);
+        this.transform.rotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(Velocity), Time.fixedDeltaTime);
+       
     }
 }
