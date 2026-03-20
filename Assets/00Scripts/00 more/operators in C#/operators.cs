@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class operators : MonoBehaviour
@@ -18,5 +21,13 @@ public class operators : MonoBehaviour
         // ternary operators
         int a = 10, b = 20;
         int min = a < b ? a : b; // if a<b return a, else return b
+
+        //?? = fallback
+        List<GameObject> listG = new();
+        foreach (GameObject go in listG ?? new List<GameObject>()) 
+            // if listG != null return listG, else return new List empty
+        { 
+        
+        }
     }
 }
