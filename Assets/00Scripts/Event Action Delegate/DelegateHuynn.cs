@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -37,15 +38,28 @@ public class DelegateHuynn : MonoBehaviour
         theFuntion += DoSomething2;
         theNumber = CheckVar;
 
-
     }
-
+    Coroutine crt;
     // Update is called once per frame
     void Update()
     {
+
         if (Keyboard.current.aKey.wasPressedThisFrame)
         {
             theFuntion?.Invoke();
         }
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            crt = StartCoroutine(WaitByIEnum());
+
+        }
+        if (Keyboard.current.cKey.wasPressedThisFrame) StopCoroutine(crt);
+
+    }
+    IEnumerator WaitByIEnum()
+    {
+        
+        yield return new WaitForSeconds(2f);
+        print("corotin is done");
     }
 }
