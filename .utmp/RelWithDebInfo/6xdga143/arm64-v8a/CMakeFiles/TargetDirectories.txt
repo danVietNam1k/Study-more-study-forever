@@ -1,0 +1,5 @@
+C:/_Unity3D project/Study more study forever/.utmp/RelWithDebInfo/6xdga143/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/_Unity3D project/Study more study forever/.utmp/RelWithDebInfo/6xdga143/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/_Unity3D project/Study more study forever/.utmp/RelWithDebInfo/6xdga143/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/_Unity3D project/Study more study forever/.utmp/RelWithDebInfo/6xdga143/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/_Unity3D project/Study more study forever/.utmp/RelWithDebInfo/6xdga143/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

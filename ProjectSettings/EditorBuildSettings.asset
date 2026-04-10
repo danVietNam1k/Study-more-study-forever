@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/01 Projectile Motion.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/00.unity
+    guid: ce34fb9dea580d443bbee4ef3867ceba
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: bb9b724becc39eb4a9fe341d38a45181, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 257adf6eb539c61439b30fe0b1b5bede, type: 2}
